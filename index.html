@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Відображення Username та ID у верхньому лівому куті -->
+    <div id="user-info">
+        <div id="username"></div>
+        <div id="user-id"></div>
+    </div>
+
+    <!-- Головна область з бульбашками -->
+    <div id="bubble-container">
+        <div class="bubble" id="profile-bubble"></div>
+        <div class="bubble" id="balance-bubble"></div>
+        <div class="bubble" id="bonus-bubble"></div>
+        <div class="bubble" id="level-bubble"></div>
+    </div>
+
+    <!-- Підписка -->
+    <div id="subscription">
+        Підписка до: <span id="expiry-date">14:18:19 22-09-2024</span>
+    </div>
+
+    <div id="navigation">
+        <button class="nav-button" onclick="openMarket()">Маркет</button>
+        <button class="nav-button" onclick="openChannel()">Канал</button>
+        
+        <img src="icon.png" alt="Icon" class="nav-icon">
+        
+        <button class="nav-button" onclick="showSupport()">Допомога</button>
+        <button class="nav-button" onclick="openProfile()">Профіль</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

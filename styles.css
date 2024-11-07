@@ -1,0 +1,142 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://img.stablecog.com/insecure/1920w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vOWFiMTMxYjMtZDliMi00MmVlLThjYjYtNjg2M2NiM2Y0ZGM0LmpwZWc.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+/* Username та ID у верхньому лівому куті */
+#user-info {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Основна область з бульбашками */
+#bubble-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* З'єднувальні лінії */
+#bubble-container::before,
+#bubble-container::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    background-color: rgba(0, 128, 255, 0.7);
+    top: 0;
+}
+
+/* Основний стиль для бульбашок */
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 128, 255, 0.3);
+    border: 2px solid rgba(0, 128, 255, 0.8);
+    box-shadow: 0 0 15px 5px rgba(0, 128, 255, 0.5);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+}
+
+/* Індивідуальний розмір для кожної бульбашки */
+#profile-bubble {
+    width: 140px;
+    height: 140px;
+    top: 200px;
+    left: 5px;
+}
+
+#balance-bubble {
+    width: 110px;
+    height: 110px;
+    top: 140px;
+    left: -140px;
+}
+
+#bonus-bubble {
+    width: 130px;
+    height: 130px;
+    top: 25px;
+    left: 0px;
+}
+
+#level-bubble {
+    width: 100px;
+    height: 100px;
+    top: 290px;
+    left: -135px;
+}
+
+#extra-bubble {
+    width: 100px;
+    height: 100px;
+    top: 390px;
+    left: 5px;
+}
+
+/* Підписка */
+#subscription {
+    margin-top: 580px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* Нижня панель */
+#navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 0 10px;
+}
+
+/* Стиль для кнопок */
+.nav-button {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Стиль для іконки між кнопками */
+.nav-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
